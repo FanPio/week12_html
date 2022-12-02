@@ -56,25 +56,29 @@
 /* step02 */
 @media screen and (min-width:401px) {
     #div01{
-        width: calc(100%/3*2);
+        width: calc(((((100% - 20px) / 3) * 2) + 10px));
         float: left;
+
     }
     #div02{
-        width: calc(100%/3);
+        width: calc(((100% - 20px) / 3));
         height: 100px;
         float: right;
     }
     #div03{
-        width: calc(100%/3);
+        width: calc((100% - 20px) / 3);
         height: 100px;
         float: left;
+        margin-bottom: 0px;
     }
     #div04{
-        width: calc(100%/3);
+        width: calc((100% - 20px) / 3);
         float: left;
+        margin-left: 10px;
+        height: 40px;
     }
     #div05{
-        width: calc(100%/3*2);
+        width: calc(((100% - 20px) / 3) * 2 + 10px);
         float: right;
     }
 }
@@ -86,14 +90,19 @@
         float: none;
     }
     #div02{
+        width: calc(((100% - 20px) / 3));
+        height: 90px;
         float: left;
     }
     #div03{
-        width: calc(100%/3*2);
-        height: 50px;
+        width: calc((100% - 20px) / 3 * 2 + 10px);
+        height: 40px;
+        margin-left: 10px;
     }
     #div04{
-        width: calc(100%/3*2);
+        width: calc((100% - 20px) / 3 * 2 + 10px);
+        height: 40px;
+        margin-top: 10px;
     }
     #div05{
         width: 100%;
@@ -103,14 +112,18 @@
 @media screen and (min-width:801px) {
     #div02{
         height: 100px;
+        width: calc((100% - 20px) /3);
     }
     #div03{
-        width: calc(100%/3);
+        width: calc((100% - 20px) /3);
         height: 100px;
+
+        margin-left: 10px;
     }
     #div04{
-        width: calc(100%/3);
+        width: calc((100% - 20px) /3);
         height: 100px;
+        margin-top: 0px;
     }
 }
 /* step05 */
@@ -118,31 +131,38 @@
 @media screen and (min-width:1001px) {
     #maindiv{
         position: relative;
-        height: 200px;
+        height: 220px;
     }
     #div01{
         position: absolute;
-        bottom: 0px;
+        width: calc(100%);
+        bottom: -10px;
+        margin-top: 10px;
     }
     #div02{
         position: absolute;
+        width: calc((100% - 20px) /3);
         height: 100px;
         top: 50px;
-        left: calc(100%/3*2);
+        right: 0px;
+        margin-top: 10px;
     }
     #div03{
         position: absolute;
-        width: calc(100%/3);
+        width: calc((100% - 20px) / 3);
         height: 100px;
-        left: calc(100%/3);
+        left: calc((100% - 20px) / 3);
         top: 50px;
+        margin-top: 10px;
     }
     #div04{
         position: absolute;
-        width: calc(100%/3);
+        width: calc((100% - 20px) / 3);
         height: 100px;
         top: 50px;
-        left: 0;
+        left: 0px;
+        margin-top: 10px;
+        margin-left: 0px;
     }
     #div05{
         position: absolute;
