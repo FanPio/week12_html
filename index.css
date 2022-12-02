@@ -1,0 +1,135 @@
+#maindiv{
+    background-color: gray;
+    min-width: 320px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+/* accessity too high */
+/* #maindiv > div{
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+} */
+#div01,#div02,#div03,#div04,#div05{
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#div01{
+    background-color: rgb(117, 175, 255);
+}
+#div02{
+    background-color: rgb(117, 255, 227);
+}
+#div03{
+    background-color: rgb(255, 248, 117);
+}
+#div04{
+    background-color: rgb(255, 200, 117);
+}
+#div05{
+    background-color: rgb(255, 117, 237);
+}
+
+/* step02 */
+@media screen and (min-width:401px) {
+    #div01{
+        width: calc(100%/3*2);
+        float: left;
+    }
+    #div02{
+        width: calc(100%/3);
+        height: 100px;
+        float: right;
+    }
+    #div03{
+        width: calc(100%/3);
+        height: 100px;
+        float: left;
+    }
+    #div04{
+        width: calc(100%/3);
+        float: left;
+    }
+    #div05{
+        width: calc(100%/3*2);
+        float: right;
+    }
+}
+
+/* step03 */
+@media screen and (min-width:601px) {
+    #div01{
+        width: 100%;
+        float: none;
+    }
+    #div02{
+        float: left;
+    }
+    #div03{
+        width: calc(100%/3*2);
+        height: 50px;
+    }
+    #div04{
+        width: calc(100%/3*2);
+    }
+    #div05{
+        width: 100%;
+    }
+}
+/* step04 */
+@media screen and (min-width:801px) {
+    #div01{
+        width: 100%;
+        float: none;
+    }
+    #div02{
+        width: calc(100%/3);
+        height: 50px;
+        float: left;
+    }
+    #div03{
+        width: calc(100%/3);
+        height: 50px;
+        float: left;
+    }
+    #div04{
+        width: calc(100%/3);
+        height: 50px;
+        float: left;
+    }
+    #div05{
+        width: 100%;
+    }
+}
+/* step05 */
+@media screen and (min-width:1001px) {
+    #div05{
+        width: 100%;
+    }
+    #div02{
+        width: calc(100%/3);
+        height: 50px;
+        float: left;
+    }
+    #div03{
+        width: calc(100%/3);
+        height: 50px;
+        float: left;
+    }
+    #div04{
+        width: calc(100%/3);
+        height: 50px;
+        float: left;
+    }
+    #div01{
+        width: 100%;
+        float: none;
+    }
+
+
+}
