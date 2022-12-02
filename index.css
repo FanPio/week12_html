@@ -1,10 +1,16 @@
 #maindiv{
-    background-color: gray;
+    background-color: rgb(151, 207, 255);
     min-width: 320px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+
+    /* border */
+    border: 10px;
+    border-style: solid;
+    border-color: rgb(151, 207, 255);
+    display: table; /* make up the problem */
 }
 /* accessity too high */
 /* #maindiv > div{
@@ -21,15 +27,27 @@
 }
 #div01{
     background-color: rgb(117, 175, 255);
+
+    /* border */
+    margin-bottom: 10px;
 }
 #div02{
     background-color: rgb(117, 255, 227);
+
+    /* border */
+    margin-bottom: 10px;
 }
 #div03{
     background-color: rgb(255, 248, 117);
+
+    /* border */
+    margin-bottom: 10px;
 }
 #div04{
     background-color: rgb(255, 200, 117);
+
+    /* border */
+    margin-bottom: 10px;
 }
 #div05{
     background-color: rgb(255, 117, 237);
